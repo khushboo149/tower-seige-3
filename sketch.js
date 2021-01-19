@@ -14,11 +14,11 @@ function preload(){
   polygon_img=loadImage("polygon.png");
 }
 function setup() {
-  createCanvas(900,400);
+  createCanvas(1200,400);
   engine = Engine.create();
   world = engine.world;
   Engine.run(engine);
-  ground = new Ground();
+  ground = new Ground(600,height,1200,20);
   stand1 = new Stand(390,300,250,10);
   stand2 = new Stand(700,200,200,10);
  
